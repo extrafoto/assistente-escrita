@@ -1,0 +1,330 @@
+/* Estilo base inspirado no content.css */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 14px;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h3, h4 {
+  margin-top: 0;
+  color: #128C7E;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+#output-container {
+  flex-grow: 1;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 10px;
+  overflow-y: auto;
+  min-height: 150px;
+}
+
+#output, #ai-correction-result, #ai-summary-result {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+#correct-button,
+#summarize-button,
+#replace-text-button,
+#generate-title-button,
+#copy-title-button,
+#rss-button {
+  background: linear-gradient(135deg, #0519c9, #010497); /* verde padrão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+
+#ai-correction-container, #ai-summary-container {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 6px;
+}
+
+#copy-correction-button, #copy-summary-button {
+  background-color: #0fd156;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+#copy-correction-button:hover, #copy-summary-button:hover {
+  background-color: #0ae0c7;
+}
+
+.hidden {
+  display: none;
+}
+
+.capture-section {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+}
+
+
+
+#capture-button:hover {
+  background: linear-gradient(135deg, #ce5e02, #e05504);
+}
+
+#capture-button:disabled {
+  background-color: #5c636a;
+  cursor: not-allowed;
+}
+
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#reset-button {
+  background-color: transparent;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+#reset-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+#ai-correction-result ins {
+  background-color: #d4edda;
+  color: #155724;
+  text-decoration: none;
+  padding: 2px 1px;
+  border-radius: 3px;
+}
+
+#ai-correction-result del {
+  background-color: #f8d7da;
+  color: #721c24;
+  text-decoration: line-through;
+  padding: 2px 1px;
+  border-radius: 3px;
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px;
+}
+
+#login-button {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+#login-button:hover {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+}
+.top-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.top-controls button {
+  min-width: 160px;
+  flex: 1 1 auto;
+}
+#capture-button {
+  background: linear-gradient(135deg, #ce5e02, #e05504);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+/* Agrupando o novo botão com os outros para ter o mesmo estilo */
+/* Estilo base compartilhado por todos os botões */
+#correct-button,
+#summarize-button,
+#replace-text-button,
+#generate-title-button,
+#copy-title-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+/* Botões com cores distintas */
+#correct-button {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+#summarize-button {
+  background: linear-gradient(135deg, #5a4fcf, #473daa);
+}
+#replace-text-button {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+}
+#generate-title-button {
+  background: linear-gradient(135deg, #2196F3, #1976D2);
+}
+#copy-title-button {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+/* Hovers */
+#correct-button:hover {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+}
+#summarize-button:hover {
+  background: linear-gradient(135deg, #473daa, #372e8f);
+}
+#replace-text-button:hover {
+  background: linear-gradient(135deg, #f57c00, #e65100);
+}
+#generate-title-button:hover {
+  background: linear-gradient(135deg, #1976D2, #0D47A1);
+}
+#copy-title-button:hover {
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+}
+
+
+/* Agrupando o hover também */
+#correct-button:hover, 
+#summarize-button:hover, 
+#replace-text-button:hover,
+#generate-title-button:hover { /* Hover adicionado ao grupo */
+  background: linear-gradient(135deg, #128C7E, #075E54);
+}
+
+/* Estilo para o novo contêiner de resultado */
+#ai-title-container {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 6px;
+}
+
+/* Estilo para o novo botão de cópia */
+#copy-title-button {
+  background-color: #ddb606;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+#copy-title-button:hover {
+  background-color: #128C7E;
+}
+
+/* Estilo para o texto do resultado dos títulos */
+#ai-title-result {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#back-button {
+  background: linear-gradient(135deg, #ccc, #888);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+#back-button:hover {
+  background: linear-gradient(135deg, #999, #555);
+}
+
+

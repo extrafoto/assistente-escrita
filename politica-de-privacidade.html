@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Política de Privacidade — Assistente de Escrita</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        max-width: 840px;
+        margin: 32px auto;
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        color: #222;
+        padding: 0 16px;
+        background-color: #ffffff; /* Adicionado para consistência com index.html */
+        border-radius: 8px; /* Adicionado para consistência com index.html */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adicionado para consistência com index.html */
+    }
+    h1, h2 { line-height: 1.2; color: #0519c9; /* Cor do título principal */}
+    h2 { color: #128C7E; /* Cor dos subtítulos */}
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }
+    .muted { color: #666; font-size: 14px; }
+    ul {
+        list-style: disc;
+        margin-left: 20px;
+        color: #333;
+        line-height: 1.6;
+    }
+    p {
+        color: #333;
+        line-height: 1.6;
+    }
+    a {
+        color: #0519c9;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Política de Privacidade — Assistente de Escrita</h1>
+  <p class="muted">Versão 1.6.1 — Atualizada em 18/08/2025</p>
+
+  <h2>Resumo</h2>
+  <p>A extensão <strong>Assistente de Escrita</strong> auxilia na produção de textos (captura, correção e resumo) diretamente no navegador. Respeitamos sua privacidade e buscamos tratar o mínimo de dados possível.</p>
+
+  <h2>Quais dados são processados</h2>
+  <ul>
+    <li><strong>Conteúdo de texto</strong> que você digita, seleciona ou escolhe processar (ex.: correção, resumo, geração de títulos).</li>
+    <li><strong>Nenhum dado sensível</strong> é tratado intencionalmente. O content script ignora campos de senha (<code>&lt;input type="password"&gt;</code>).</li>
+  </ul>
+
+  <h2>Onde o processamento ocorre</h2>
+  <ul>
+    <li><strong>Localmente no seu navegador</strong>: a captura/visualização do texto ocorre no próprio dispositivo.</li>
+    <li><strong>Quando você aciona recursos de IA</strong> (ex.: “Corrigir”, “Resumo”, “Títulos”), o texto <em>pode</em> ser enviado ao <strong>provedor de IA</strong> configurado por você (ex.: Google Generative Language API/Gemini). Esse envio só ocorre <em>após</em> sua ação explícita no painel.</li>
+  </ul>
+
+  <h2>Compartilhamento e retenção</h2>
+  <ul>
+    <li><strong>Não coletamos</strong>, armazenamos ou vendemos seus dados em servidores próprios.</li>
+    <li>Se você optar pelos recursos de IA, o texto <strong>pode transitar</strong> pelo serviço de IA de terceiros, sujeito às <strong>políticas e retenção</strong> desse provedor.</li>
+  </ul>
+
+  <h2>Permissões da extensão</h2>
+  <ul>
+    <li><strong>activeTab / scripting</strong>: injetar o content script na aba atual para capturar/sincronizar texto quando você solicita.</li>
+    <li><strong>storage</strong>: guardar preferências locais (ex.: estado de login).</li>
+    <li><strong>sidePanel</strong>: exibir o painel lateral.</li>
+  </ul>
+
+  <h2>Segurança</h2>
+  <ul>
+    <li>Dados enviados a provedores de IA usam <strong>HTTPS</strong> (criptografia em trânsito).</li>
+    <li>Não usamos <em>remotely hosted code</em>, <code>eval</code>, nem bibliotecas ofuscadas.</li>
+  </ul>
+
+  <h2>Seus controles</h2>
+  <ul>
+    <li>Você decide quando enviar conteúdo para os recursos de IA (ação explícita).</li>
+    <li>Você pode desinstalar a extensão a qualquer momento.</li>
+  </ul>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta política: <a href="mailto:gazeredo@gmail.com">gazeredo@gmail.com</a></p>
+</body>
+</html>
+
+
