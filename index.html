@@ -1,112 +1,153 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <title>Assistente de Escrita — Extensão para Chrome</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Extensão para Google Chrome que captura, corrige e resume textos em tempo real.">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente de Escrita - Página do Produto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #0519c9;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section h2 {
+            color: #128C7E;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            list-style: disc;
+            margin-left: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .section p {
+            color: #333;
+            line-height: 1.6;
+        }
+        .info-box {
+            background-color: #e6f7ff;
+            border: 1px solid #91d5ff;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .info-box p {
+            margin: 5px 0;
+            color: #0056b3;
+        }
+        .install-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        .install-button:hover {
+            background: linear-gradient(135deg, #128C7E, #075E54);
+        }
+        .footer-links {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+        .footer-links a {
+            color: #0519c9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo-text" href="./">Assistente de Escrita</a>
-      <nav class="nav">
-        <a href="./">Início</a>
-        <a href="politica.html">Política de Privacidade</a>
-        <a class="cta" href="https://chrome.google.com/webstore/detail/assistente-de-escrita/SEU_ID_AQUI" target="_blank" rel="noopener">Instalar Extensão</a>
-      </nav>
+    <div class="header">
+        <h1>Assistente de Escrita</h1>
+        <p>Sua ferramenta inteligente para otimizar a produção de texto.</p>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <!-- LOGO centralizado -->
-          <img src="logo.png" alt="Logo Assistente de Escrita" class="logo">
-
-          <h1>Escreva melhor, mais rápido.</h1>
-          <p>O <strong>Assistente de Escrita</strong> ajuda você a produzir textos com <em>clareza</em>, <em>correção gramatical</em> e <em>sínteses inteligentes</em> — direto no seu navegador.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="https://chrome.google.com/webstore/detail/assistente-de-escrita/SEU_ID_AQUI" target="_blank" rel="noopener">Adicionar ao Chrome</a>
-            <a class="btn ghost" href="politica.html">Ver Política de Privacidade</a>
-          </div>
-          <p class="meta">Versão 1.6.1 • Atualizado em 18/08/2025 • Desenvolvido por Gustavo Azeredo (<a href="mailto:gazeredo@gmail.com">gazeredo@gmail.com</a>)</p>
+    <div class="section">
+        <h2>Sobre a Extensão</h2>
+        <p>O <strong>Assistente de Escrita</strong> é uma extensão para navegador projetada para aprimorar sua produtividade e a qualidade dos seus textos. Com funcionalidades de captura, correção e resumo, ele se integra perfeitamente ao seu fluxo de trabalho, garantindo que suas comunicações sejam sempre claras e eficazes.</p>
+        <div class="info-box">
+            <p><strong>Versão:</strong> 1.6.1</p>
+            <p><strong>Criador:</strong> Manus AI Agent</p>
+            <p><strong>Email para contato:</strong> manus.ai.agent@google.com</p>
         </div>
-        <div class="hero-media">
-          <div class="media-placeholder">Prévia do Painel Lateral<br><small>(adicione um screenshot aqui)</small></div>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="features">
-      <div class="container">
-        <h2>O que a extensão faz</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>📋 Captura inteligente</h3>
-            <p>Captura textos de campos de digitação, seleções e áreas editáveis sem atrapalhar seu fluxo.</p>
-          </article>
-          <article class="card">
-            <h3>📝 Correção gramatical</h3>
-            <p>Revise ortografia e gramática com um clique. Integra-se a editores em páginas modernas.</p>
-          </article>
-          <article class="card">
-            <h3>🧠 Resumos rápidos</h3>
-            <p>Gere resumos objetivos para briefing, pauta ou publicação com foco em clareza.</p>
-          </article>
-          <article class="card">
-            <h3>💡 Títulos sugeridos</h3>
-            <p>Proponha títulos com foco em SEO para acelerar a etapa de edição.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="howto">
-      <div class="container">
-        <h2>Como usar</h2>
-        <ol>
-          <li>Clique em <strong>Adicionar ao Chrome</strong> e instale a extensão.</li>
-          <li>Abra o ícone da extensão para exibir o <em>painel lateral</em>.</li>
-          <li>Use <strong>Capturar Texto</strong> para trazer o conteúdo da aba ativa.</li>
-          <li>Selecione <strong>Corrigir</strong>, <strong>Resumir</strong> ou <strong>Gerar Títulos</strong> quando precisar.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="privacy">
-      <div class="container">
-        <h2>Transparência e privacidade</h2>
-        <p>A extensão processa seu texto de forma local. Caso você acione recursos de IA, o conteúdo poderá ser enviado ao provedor de IA configurado (ex.: Google Gemini) exclusivamente para executar a função solicitada. Detalhes completos na <a href="politica.html">Política de Privacidade</a>.</p>
-      </div>
-    </section>
-
-    <section class="changelog">
-      <div class="container">
-        <h2>Novidades (1.6.1)</h2>
+    <div class="section">
+        <h2>Modo de Usar</h2>
         <ul>
-          <li>Injeção automática/on-demand do conteúdo para <strong>capturar sem F5</strong>.</li>
-          <li>Correções de estabilidade em editores contentEditable.</li>
-          <li>Documentação de privacidade revisada para a Chrome Web Store.</li>
+            <li><strong>Captura em Tempo Real:</strong> Ao digitar em campos de texto (inputs, textareas, contentEditable), o conteúdo é automaticamente exibido no painel lateral da extensão.</li>
+            <li><strong>Captura Sob Demanda:</strong> Clique no botão "Capturar Texto" no painel lateral para obter o conteúdo atual da página ou de um campo específico, mesmo em abas abertas antes da ativação da extensão.</li>
+            <li><strong>Substituição de Texto:</strong> Use o botão "Substituir" para atualizar o campo de texto ativo com o conteúdo corrigido ou gerado, mantendo o foco.</li>
+            <li><strong>Correção de Texto:</strong> Envie seu texto para correção gramatical e ortográfica, com destaque para as alterações.</li>
+            <li><strong>Resumo Inteligente:</strong> Obtenha resumos concisos de longos artigos ou documentos.</li>
+            <li><strong>Geração de Títulos:</strong> Crie títulos otimizados para SEO e chamativos para seu conteúdo.</li>
         </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Assistente de Escrita</strong><br>
-        © 2025 Gustavo Azeredo
-      </div>
-      <div class="links">
-        <a href="./">Início</a>
-        <a href="politica.html">Política de Privacidade</a>
-        <a href="mailto:gazeredo@gmail.com">Contato</a>
-      </div>
     </div>
-  </footer>
+
+    <div class="section">
+        <h2>Finalidade</h2>
+        <p>Nossa missão é simplificar e otimizar o processo de escrita para profissionais, estudantes e qualquer pessoa que precise de agilidade e precisão na comunicação. O Assistente de Escrita ajuda a:</p>
+        <ul>
+            <li>Economizar tempo na revisão e edição.</li>
+            <li>Garantir a clareza e a correção gramatical.</li>
+            <li>Gerar ideias e resumos de forma eficiente.</li>
+            <li>Manter um padrão de qualidade em todo o seu conteúdo escrito.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Instalação</h2>
+        <p>Para instalar a extensão Assistente de Escrita, siga os passos abaixo:</p>
+        <ol>
+            <li>Acesse o link da Chrome Web Store para desenvolvedores.</li>
+            <li>Faça o upload dos arquivos da extensão (pasta compactada).</li>
+            <li>Siga as instruções para publicar ou testar a extensão.</li>
+        </ol>
+        <a href="https://chrome.google.com/webstore/devconsole" target="_blank" class="install-button">Acessar Chrome Web Store (Console do Desenvolvedor)</a>
+        <p style="margin-top: 15px; font-size: 0.9em; color: #777;"><strong>Nota:</strong> Este link direciona para o console de desenvolvedores da Chrome Web Store. Para usuários finais, a extensão estará disponível em breve na loja pública.</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <span>|</span>
+        <a href="#">Termos de Uso</a> <!-- Link placeholder -->
+    </div>
 </body>
 </html>
+
+
